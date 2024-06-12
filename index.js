@@ -5,7 +5,8 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
-const port = 3000;
+const port = process.env.PORT || 3000;
+
 const url = "mongodb+srv://ehtashamspyresync:L6zuREQ3cQhJCY8b@cluster0.6czzjz5.mongodb.net/?retryWrites=true&w=majority";
 const dbName = 'bird-Api';
 const collectionName = 'bird-Api-Collection';
