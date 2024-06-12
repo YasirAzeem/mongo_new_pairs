@@ -42,7 +42,7 @@ async function getRecentData() {
     }
 }
 
-app.get('/recent-data', async (req, res) => {
+app.get('/', async (req, res) => {
     try {
         const recentData = await getRecentData();
         res.json(recentData);
